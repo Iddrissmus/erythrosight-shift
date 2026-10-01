@@ -1,0 +1,86 @@
+# ---------------------------------------------------------------
+# DATA — never commit images or downloaded datasets.
+# A few hundred thousand microscope images will destroy this repo:
+# slow clones, failed pushes, and a history you cannot easily undo.
+# ---------------------------------------------------------------
+data/
+*.zip
+*.tar
+*.tar.gz
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+
+# Model weights and checkpoints
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+*.onnx
+
+# Keep figures you DO want to show — un-ignore them explicitly
+!results/figures/*.png
+!results/figures/*.jpg
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# ---------------------------------------------------------------
+# Notebooks
+# ---------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ---------------------------------------------------------------
+# Experiment tracking and logs
+# ---------------------------------------------------------------
+wandb/
+mlruns/
+runs/
+lightning_logs/
+*.log
+
+# ---------------------------------------------------------------
+# Secrets — API keys, Kaggle credentials
+# ---------------------------------------------------------------
+.env
+.env.*
+kaggle.json
+*.pem
+secrets/
+
+# ---------------------------------------------------------------
+# OS and editor
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
